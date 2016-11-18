@@ -5,23 +5,23 @@ Android数据绑定框架DataBinding
 
 查看build.gradle的工程文件的Android 的 Gradle 插件版本是否低于 1.5.0：
 
-classpath 'com.android.tools.build:gradle:1.5.0'
+        classpath 'com.android.tools.build:gradle:1.5.0'
 
 低于1.5.0修改build.grade的工程文件中dependencies：
 
-dependencies {
-        classpath 'com.android.tools.build:gradle:1.5.0'
-        classpath 'com.android.databinding:dataBinder:1.0-rc0'
-    }
+        dependencies {
+                classpath 'com.android.tools.build:gradle:1.5.0'
+                classpath 'com.android.databinding:dataBinder:1.0-rc0'
+            }
 
 Android 的 Gradle 插件版本高于 1.5.0的直接在build.grade（Module）文件中添加
 
-android {
-    ....
-    dataBinding {
-        enabled = true
-    }
-}
+        android {
+            ....
+            dataBinding {
+                enabled = true
+            }
+        }
 
 注意：Android stuido 的版本一定要大于1.3，而且Android Studio目前对binding对象没有自动代码提示，只会在编译时进行检查。
 
