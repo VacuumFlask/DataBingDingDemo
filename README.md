@@ -111,5 +111,5 @@ android {
                         User user = new User("测试人员", "21");
                         viewDataBinding.setUser(user);
                 }
-                }
+        }
 
