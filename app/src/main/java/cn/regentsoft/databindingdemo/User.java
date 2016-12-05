@@ -2,6 +2,7 @@ package cn.regentsoft.databindingdemo;
 
 /**
  * Created by Administrator on 2016/11/17 0017.
+ * User的Bean类
  */
 public class User {
     private String name;

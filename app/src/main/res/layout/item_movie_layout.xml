@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="movie"
+            type="cn.regentsoft.databindingdemo.Movie" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="109dp"
+            android:layout_height="135dp"
+            app:loadImageUrl="@{movie.image}" />
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/item_image"
+            android:paddingLeft="8dp"
+            android:text="@{movie.name}"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_name"
+            android:layout_toRightOf="@+id/item_image"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:text="@{movie.id}"
+            android:textColor="#77000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_id"
+            android:layout_toRightOf="@+id/item_image"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:text="@{movie.year}"
+            android:textColor="#77000000"
+            android:textSize="16sp" />
+
+        <RatingBar
+            android:id="@+id/item_grade"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_year"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/item_image"
+            android:numStars="10"
+            android:paddingTop="8dp"
+            android:rating="@{movie.rating}"
+            android:stepSize="0.5" />
+
+
+    </RelativeLayout>
+
+</layout>
