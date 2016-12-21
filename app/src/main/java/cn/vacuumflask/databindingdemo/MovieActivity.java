@@ -1,4 +1,4 @@
-package cn.regentsoft.databindingdemo;
+package cn.vacuumflask.databindingdemo;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.view.View;
 
 import java.util.ArrayList;
 
-import cn.regentsoft.databindingdemo.databinding.ActivityMovieLayoutBinding;
+import cn.vacuumflask.databindingdemo.databinding.ActivityMovieLayoutBinding;
 
 /**
  * Created by Administrator on 2016/12/2 0002.

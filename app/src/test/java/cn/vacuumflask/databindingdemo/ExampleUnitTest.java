@@ -1,4 +1,4 @@
-package cn.regentsoft.databindingdemo;
+package cn.vacuumflask.databindingdemo;
 
 import org.junit.Test;
 

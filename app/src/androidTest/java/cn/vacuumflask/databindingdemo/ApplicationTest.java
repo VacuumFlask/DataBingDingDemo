@@ -1,4 +1,4 @@
-package cn.regentsoft.databindingdemo;
+package cn.vacuumflask.databindingdemo;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "24.0.1"
 
     defaultConfig {
-        applicationId "cn.regentsoft.databindingdemo"
+        applicationId "cn.vacuumflask.databindingdemo"
         minSdkVersion 14
         targetSdkVersion 25
         versionCode 1

@@ -1,10 +1,10 @@
-package cn.regentsoft.databindingdemo;
+package cn.vacuumflask.databindingdemo;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-import cn.regentsoft.databindingdemo.databinding.MainActivityLayoutBinding;
+import cn.vacuumflask.databindingdemo.databinding.MainActivityLayoutBinding;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -6,7 +6,7 @@
 
         <variable
             name="movie"
-            type="cn.regentsoft.databindingdemo.Movie" />
+            type="cn.vacuumflask.databindingdemo.Movie" />
     </data>
 
     <RelativeLayout

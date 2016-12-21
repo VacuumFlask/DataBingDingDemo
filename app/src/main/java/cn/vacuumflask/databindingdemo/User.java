@@ -1,4 +1,4 @@
-package cn.regentsoft.databindingdemo;
+package cn.vacuumflask.databindingdemo;
 
 /**
  * Created by Administrator on 2016/11/17 0017.

@@ -1,4 +1,4 @@
-package cn.regentsoft.databindingdemo;
+package cn.vacuumflask.databindingdemo;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
@@ -41,7 +41,7 @@ public class Movie extends BaseObservable {
 
     public void setName(String name) {
         this.name = name;
-//        notifyPropertyChanged(cn.regentsoft.databindingdemo.BR.name);
+//        notifyPropertyChanged(cn.vacuumflask.databindingdemo.BR.name);
         notifyChange();
     }
 

@@ -1,4 +1,4 @@
-package cn.regentsoft.databindingdemo;
+package cn.vacuumflask.databindingdemo;
 
 import android.databinding.DataBindingUtil;
 import android.support.v7.widget.RecyclerView;
@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 
 import java.util.List;
 
-import cn.regentsoft.databindingdemo.databinding.ItemMovieLayoutBinding;
+import cn.vacuumflask.databindingdemo.databinding.ItemMovieLayoutBinding;
 
 /**
  * Created by Administrator on 2016/12/2 0002.
@@ -21,10 +21,6 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     public MyRecyclerViewAdapter(List<Movie> list) {
         this.list = list;
-    }
-
-    interface OnItemClickListener {
-        void setOnItemClickListener(View view);
     }
 
     @Override
@@ -58,6 +54,10 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
 
     public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
         this.onItemClickListener = onItemClickListener;
+    }
+
+    interface OnItemClickListener {
+        void setOnItemClickListener(View view);
     }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
